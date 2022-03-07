@@ -1,0 +1,25 @@
+/** @format */
+
+import type { IconProps } from './Icon.type';
+import React from 'react';
+import { Svg } from './Svg';
+
+export const DeathStarIcon = ({ size = '1rem', ...props }: IconProps) => {
+  return (
+    <Svg
+      viewBox="0 0 24 24"
+      xmlSpace="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+      css={{
+        width: size,
+        height: size
+      }}
+      {...props}
+    >
+      <g>
+        <circle cx="10.5" cy="6.5" r="1.5" />
+        <path d="M20.5 11.5a.5.5 0 0 0 .5-.5V9h1.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H20V4h.727a.5.5 0 0 0 .336-.87A11.964 11.964 0 0 0 13 0C6.383 0 1 5.383 1 12s5.383 12 12 12c2.98 0 5.844-1.112 8.063-3.13a.499.499 0 0 0-.336-.87H20v-1h2.5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5H19v-2.5H2.025C2.018 12.333 2 12.169 2 12s.018-.333.025-.5H20.5zM16 6h2a.5.5 0 1 1 0 1h-2a.5.5 0 1 1 0-1zm-5.5-3C12.43 3 14 4.57 14 6.5S12.43 10 10.5 10 7 8.43 7 6.5 8.57 3 10.5 3zm-6 3h1a.5.5 0 1 1 0 1h-1a.5.5 0 1 1 0-1zm11 9H17a.5.5 0 1 1 0 1h-1.5a.5.5 0 1 1 0-1zm-9 3h-2a.5.5 0 1 1 0-1h2a.5.5 0 1 1 0 1zM4 14h4.5a.5.5 0 1 1 0 1H4a.5.5 0 1 1 0-1z" />
+      </g>
+    </Svg>
+  );
+};
