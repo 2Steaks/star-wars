@@ -1,0 +1,11 @@
+/** @format */
+
+import { styled } from '@project/theme';
+
+export const Svg = styled('svg', {
+  display: 'inline-block',
+  width: '1rem',
+  height: '1rem',
+  fill: 'currentColor',
+  pointerEvents: 'none'
+});
